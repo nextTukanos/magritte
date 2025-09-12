@@ -1,16 +1,17 @@
-Extension { #name : #GRPackage }
+Extension { #name : 'GRPackage' }
 
-{ #category : #'*magritte-model' }
+{ #category : '*magritte-model' }
 GRPackage class >> magritteModel [
 	^ self new
 		name: 'Magritte-Model';
-		description: 'The Magritte metamodel.';
+		description: 'Magritte metamodel.';
 		addDependency: 'Grease-Core';
 		url: #magritteUrl;
 		yourself
 ]
 
-{ #category : #'*magritte-model' }
+{ #category : '*magritte-model' }
 GRPackage >> magritteUrl [
-	^ 'http://source.lukas-renggli.ch/magritte2'
+	"The original source: 'http://source.lukas-renggli.ch/magritte2'"
+	^ 'https://github.com/magritte-metamodel/magritte'
 ]
